@@ -1528,3 +1528,208 @@ button:focus {
         transform: translateX(0);
     }
 }
+
+/* Example Project Prompt Section */
+.example-prompt {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f0f9ff;
+    border-radius: 10px;
+    border-left: 4px solid #0ea5e9;
+}
+
+.prompt-box {
+    background: #1e293b;
+    color: #f1f5f9;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    border: 1px solid #334155;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prompt-box code {
+    background: none;
+    color: inherit;
+    padding: 0;
+    font-size: inherit;
+}
+
+.prompt-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item i {
+    color: #0ea5e9;
+    font-size: 1.2rem;
+}
+
+/* Push Files Section */
+.push-files-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 15px;
+    border: 2px solid #e2e8f0;
+}
+
+.push-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.push-illustration {
+    text-align: center;
+}
+
+.push-description {
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+.push-workflow {
+    margin: 2rem 0;
+}
+
+.push-workflow h4 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.git-help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.git-help-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 3px solid #4CAF50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.command-example {
+    background: #1e293b;
+    color: #f1f5f9;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.command-example code {
+    background: none;
+    color: inherit;
+    padding: 0;
+    font-size: inherit;
+}
+
+.git-help-item p {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.benefits-list .benefit-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 3px solid #4CAF50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-list .benefit-item i {
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+.benefits-list .benefit-item span {
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.workflow-steps-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.compact-step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 3px solid #4CAF50;
+}
+
+.compact-step .step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.compact-step span:not(.step-number) {
+    color: #475569;
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .push-intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .prompt-benefits {
+        grid-template-columns: 1fr;
+    }
+    
+    .git-help-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-list {
+        grid-template-columns: 1fr;
+    }
+}
