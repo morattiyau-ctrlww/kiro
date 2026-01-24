@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiro IDE Tutorial - Complete Beginner's Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-code"></i>
+                    <span>Kiro IDE Tutorial</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#getting-started">Getting Started</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#git-publishing">Git Publishing</a></li>
+                    <li><a href="#vibe-coding">Vibe Coding</a></li>
+                    <li><a href="#best-practices">Best Practices</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Master Kiro IDE</h1>
+            <p class="hero-subtitle">Your complete guide to getting started with Kiro IDE and vibe coding</p>
+            <div class="hero-buttons">
+                <a href="#getting-started" class="btn btn-primary">Start Learning</a>
+                <a href="#overview" class="btn btn-secondary">Watch Overview</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="svg-icon large">
+                <svg viewBox="0 0 24 24" fill="#2196F3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 12H3V4h18v10z"/>
+                    <rect x="5" y="6" width="6" height="6" fill="#4CAF50"/>
+                    <rect x="13" y="6" width="6" height="2" fill="#FF9800"/>
+                    <rect x="13" y="10" width="4" height="2" fill="#FFC107"/>
+                </svg>
+                <p>Kiro IDE Environment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="quick-nav">
+        <div class="container">
+            <div class="nav-cards">
+                <div class="nav-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Quick Start</h3>
+                    <p>Get Kiro IDE running in minutes</p>
+                    <a href="#getting-started" class="nav-link">Start Here →</a>
+                </div>
+                <div class="nav-card">
+                    <i class="fas fa-folder-plus"></i>
+                    <h3>New Projects</h3>
+                    <p>Create and manage your projects</p>
+                    <a href="#projects" class="nav-link">Learn More →</a>
+                </div>
+                <div class="nav-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Git Publishing</h3>
+                    <p>Deploy your projects to the web</p>
+                    <a href="#git-publishing" class="nav-link">Deploy Now →</a>
+                </div>
+                <div class="nav-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Vibe Coding</h3>
+                    <p>AI-powered development features</p>
+                    <a href="#vibe-coding" class="nav-link">Explore →</a>
+                </div>
+                <div class="nav-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Best Practices</h3>
+                    <p>Optimize your workflow</p>
+                    <a href="#best-practices" class="nav-link">Improve →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Getting Started with Kiro</h2>
+                <p>Everything you need to know to begin your Kiro IDE journey</p>
+            </div>
+
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <div class="card-number">1</div>
+                    <h3>Download and Install</h3>
+                    <div class="svg-icon">
+                        <svg viewBox="0 0 24 24" fill="#4CAF50" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                        </svg>
+                        <p>Download & Install</p>
+                    </div>
+                    <p>Visit the official Kiro IDE website and download the installer for your operating system (Windows, macOS, or Linux).</p>
+                    <div class="step-list">
+                        <div class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>Go to kiro-ide.com</span>
+                        </div>
+                        <div class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>Click "Download" button</span>
+                        </div>
+                        <div class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>Run the installer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="card-number">2</div>
+                    <h3>First Launch Setup</h3>
+                    <div class="svg-icon">
+                        <svg viewBox="0 0 24 24" fill="#2196F3" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/>
+                        </svg>
+                        <p>Setup Configuration</p>
+                    </div>
+                    <p>When you first launch Kiro IDE, you'll be greeted with a setup wizard to configure your preferences.</p>
+                    <div class="step-list">
+                        <div class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>Choose your theme (light/dark)</span>
+                        </div>
+                        <div class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>Set up your programming languages</span>
+                        </div>
+                        <div class="step-item">
+                            <i class="fas fa-check"></i>
+                            <span>Configure extensions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="card-number">3</div>
+                    <h3>Understanding the Interface</h3>
+                    <div class="svg-icon">
+                        <svg viewBox="0 0 24 24" fill="#FF9800" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 5v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1z"/>
+                        </svg>
+                        <p>IDE Interface</p>
+                    </div>
+                    <p>Familiarize yourself with the Kiro IDE layout and key components.</p>
+                    <div class="interface-parts">
+                        <div class="part-item">
+                            <strong>Menu Bar:</strong> File, Edit, View, etc.
+                        </div>
+                        <div class="part-item">
+                            <strong>Activity Bar:</strong> Navigation and tools
+                        </div>
+                        <div class="part-item">
+                            <strong>Side Bar:</strong> File explorer and search
+                        </div>
+                        <div class="part-item">
+                            <strong>Editor:</strong> Main coding area
+                        </div>
+                        <div class="part-item">
+                            <strong>Panel:</strong> Terminal, output, debug console
+                        </div>
+                        <div class="part-item">
+                            <strong>Status Bar:</strong> Information and notifications
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Opening and Creating New Projects</h2>
+                <p>Learn how to manage your projects efficiently in Kiro IDE</p>
+            </div>
+
+            <div class="project-workflow">
+                <div class="workflow-step">
+                    <div class="step-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Opening Existing Projects</h3>
+                        <div class="svg-icon small">
+                            <svg viewBox="0 0 24 24" fill="#FFC107" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/>
+                            </svg>
+                            <p>Open Project</p>
+                        </div>
+                        <p>There are multiple ways to open existing projects in Kiro IDE:</p>
+                        <ul class="feature-list">
+                            <li><strong>File > Open Folder:</strong> Browse to your project directory</li>
+                            <li><strong>Drag and Drop:</strong> Drag a folder directly into Kiro IDE</li>
+                            <li><strong>Recent Projects:</strong> Access from the welcome screen</li>
+                            <li><strong>Command Palette:</strong> Ctrl+Shift+P, type "Open Folder"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Creating New Projects</h3>
+                        <div class="svg-icon small">
+                            <svg viewBox="0 0 24 24" fill="#4CAF50" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                            </svg>
+                            <p>Create Project</p>
+                        </div>
+                        <p>Start fresh with a new project using these methods:</p>
+                        <ul class="feature-list">
+                            <li><strong>File > New Folder:</strong> Create a new project directory</li>
+                            <li><strong>Project Templates:</strong> Choose from pre-configured templates</li>
+                            <li><strong>Git Integration:</strong> Initialize with Git repository</li>
+                            <li><strong>Package Manager:</strong> Set up npm, pip, cargo, etc.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="project-types">
+                <h3>Supported Project Types</h3>
+                <div class="type-grid">
+                    <div class="type-card">
+                        <i class="fab fa-js"></i>
+                        <h4>JavaScript/Node.js</h4>
+                        <p>Full support for npm, yarn, and modern JS frameworks</p>
+                    </div>
+                    <div class="type-card">
+                        <i class="fab fa-python"></i>
+                        <h4>Python</h4>
+                        <p>Virtual environments, pip, and scientific computing</p>
+                    </div>
+                    <div class="type-card">
+                        <i class="fab fa-react"></i>
+                        <h4>React/Vue/Angular</h4>
+                        <p>Frontend frameworks with hot reload and debugging</p>
+                    </div>
+                    <div class="type-card">
+                        <i class="fab fa-rust"></i>
+                        <h4>Rust</h4>
+                        <p>Cargo integration and Rust analyzer support</p>
+                    </div>
+                    <div class="type-card">
+                        <i class="fab fa-java"></i>
+                        <h4>Java/Kotlin</h4>
+                        <p>Maven/Gradle support and Spring Boot integration</p>
+                    </div>
+                    <div class="type-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>Web Development</h4>
+                        <p>HTML, CSS, and live preview capabilities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Git Publishing Section -->
+    <section id="git-publishing" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Git Web Publishing</h2>
+                <p>Deploy your projects to the web using modern Git-based platforms</p>
+            </div>
+
+            <div class="publishing-intro">
+                <div class="intro-illustration">
+                    <div class="svg-icon large">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="#4CAF50"/>
+                            <path d="M12 2V12L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="#45A049"/>
+                        </svg>
+                        <p>Git Deployment</p>
+                    </div>
+                </div>
+                <div class="intro-description">
+                    <h3>Why Git-Based Publishing?</h3>
+                    <p>Modern web deployment platforms leverage Git for seamless, automated workflows. Push your code, and watch it go live instantly with continuous integration, automatic HTTPS, and global CDN distribution.</p>
+                    <div class="publishing-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Instant deployment</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-sync"></i>
+                            <span>Automatic updates</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Free SSL certificates</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Global CDN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="platforms-grid">
+                <!-- GitHub Pages -->
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <h3>GitHub Pages</h3>
+                        <span class="platform-badge free">Free</span>
+                    </div>
+                    <div class="platform-content">
+                        <p>Perfect for static sites, documentation, and personal portfolios. Direct integration with your GitHub repositories.</p>
+                        <div class="deployment-steps">
+                            <h4>Deployment Steps:</h4>
+                            <div class="step-item">
+                                <span class="step-number">1</span>
+                                <span>Create a GitHub repository</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">2</span>
+                                <span>Push your code to main branch</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">3</span>
+                                <span>Go to Settings > Pages</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">4</span>
+                                <span>Select source branch (main)</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">5</span>
+                                <span>Save and wait for deployment</span>
+                            </div>
+                        </div>
+                        <div class="platform-features">
+                            <div class="feature-tag">Custom domains</div>
+                            <div class="feature-tag">Automatic HTTPS</div>
+                            <div class="feature-tag">Jekyll support</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Netlify -->
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="#00C7B7" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                            </svg>
+                        </div>
+                        <h3>Netlify</h3>
+                        <span class="platform-badge free">Free Tier</span>
+                    </div>
+                    <div class="platform-content">
+                        <p>Powerful continuous deployment with form handling, serverless functions, and split testing capabilities.</p>
+                        <div class="deployment-steps">
+                            <h4>Deployment Steps:</h4>
+                            <div class="step-item">
+                                <span class="step-number">1</span>
+                                <span>Sign up at netlify.com</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">2</span>
+                                <span>Click "New site from Git"</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">3</span>
+                                <span>Connect your Git provider</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">4</span>
+                                <span>Configure build settings</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">5</span>
+                                <span>Deploy site and get URL</span>
+                            </div>
+                        </div>
+                        <div class="platform-features">
+                            <div class="feature-tag">Instant rollbacks</div>
+                            <div class="feature-tag">Form handling</div>
+                            <div class="feature-tag">Serverless functions</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vercel -->
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" fill="#000"/>
+                            </svg>
+                        </div>
+                        <h3>Vercel</h3>
+                        <span class="platform-badge free">Free Tier</span>
+                    </div>
+                    <div class="platform-content">
+                        <p>Optimized for Next.js and React applications with edge computing, analytics, and performance monitoring.</p>
+                        <div class="deployment-steps">
+                            <h4>Deployment Steps:</h4>
+                            <div class="step-item">
+                                <span class="step-number">1</span>
+                                <span>Install Vercel CLI: npm i -g vercel</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">2</span>
+                                <span>Login: vercel login</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">3</span>
+                                <span>Deploy: vercel</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">4</span>
+                                <span>Connect to Git repository</span>
+                            </div>
+                            <div class="step-item">
+                                <span class="step-number">5</span>
+                                <span>Configure automatic deployments</span>
+                            </div>
+                        </div>
+                        <div class="platform-features">
+                            <div class="feature-tag">Edge functions</div>
+                            <div class="feature-tag">Analytics</div>
+                            <div class="feature-tag">Performance monitoring</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workflow-comparison">
+                <h3>Platform Comparison</h3>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>GitHub Pages</th>
+                                <th>Netlify</th>
+                                <th>Vercel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cost</td>
+                                <td>Completely Free</td>
+                                <td>Free tier available</td>
+                                <td>Free tier available</td>
+                            </tr>
+                            <tr>
+                                <td>Build Time</td>
+                                <td>2-10 minutes</td>
+                                <td>1-5 minutes</td>
+                                <td>30 seconds - 2 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Custom Domain</td>
+                                <td>✓ Free</td>
+                                <td>✓ Free</td>
+                                <td>✓ Free</td>
+                            </tr>
+                            <tr>
+                                <td>Serverless Functions</td>
+                                <td>✗</td>
+                                <td>✓ Free tier</td>
+                                <td>✓ Free tier</td>
+                            </tr>
+                            <tr>
+                                <td>Form Handling</td>
+                                <td>✗</td>
+                                <td>✓ Free</td>
+                                <td>✓ Free tier</td>
+                            </tr>
+                            <tr>
+                                <td>Analytics</td>
+                                <td>✗</td>
+                                <td>✓ Paid</td>
+                                <td>✓ Free tier</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="deployment-workflows">
+                <h3>Common Deployment Workflows</h3>
+                <div class="workflow-grid">
+                    <div class="workflow-card">
+                        <div class="workflow-icon">
+                            <svg viewBox="0 0 24 24" fill="#4CAF50" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h4>Static Site Workflow</h4>
+                        <p>Perfect for portfolios, blogs, and documentation sites.</p>
+                        <div class="workflow-steps">
+                            <div class="mini-step">Build static files</div>
+                            <div class="mini-step">Push to Git</div>
+                            <div class="mini-step">Auto-deploy</div>
+                        </div>
+                    </div>
+
+                    <div class="workflow-card">
+                        <div class="workflow-icon">
+                            <svg viewBox="0 0 24 24" fill="#2196F3" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h4>Jamstack Workflow</h4>
+                        <p>Modern web architecture with APIs and static generation.</p>
+                        <div class="workflow-steps">
+                            <div class="mini-step">Headless CMS</div>
+                            <div class="mini-step">Static generation</div>
+                            <div class="mini-step">CDN deployment</div>
+                        </div>
+                    </div>
+
+                    <div class="workflow-card">
+                        <div class="workflow-icon">
+                            <svg viewBox="0 0 24 24" fill="#FF9800" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                            </svg>
+                        </div>
+                        <h4>Full-Stack Workflow</h4>
+                        <p>Serverless functions with frontend applications.</p>
+                        <div class="workflow-steps">
+                            <div class="mini-step">API endpoints</div>
+                            <div class="mini-step">Database integration</div>
+                            <div class="mini-step">Edge deployment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="best-practices">
+                <h3>Git Publishing Best Practices</h3>
+                <div class="practices-grid">
+                    <div class="practice-item">
+                        <i class="fas fa-code-branch"></i>
+                        <h4>Use Branching Strategy</h4>
+                        <p>Maintain separate branches for development, staging, and production environments.</p>
+                    </div>
+                    <div class="practice-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Environment Variables</h4>
+                        <p>Store sensitive data in environment variables, never commit them to Git.</p>
+                    </div>
+                    <div class="practice-item">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>README Documentation</h4>
+                        <p>Include deployment instructions and project setup in your README.</p>
+                    </div>
+                    <div class="practice-item">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Build Optimization</h4>
+                        <p>Optimize assets and enable compression for faster load times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vibe Coding Section -->
+    <section id="vibe-coding" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Using Vibe Coding Features</h2>
+                <p>Unlock the power of AI-assisted development in Kiro IDE</p>
+            </div>
+
+            <div class="vibe-intro">
+                <div class="vibe-illustration">
+                    <div class="svg-icon large">
+                        <svg viewBox="0 0 24 24" fill="#9C27B0" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            <circle cx="8" cy="10" r="1"/>
+                            <circle cx="12" cy="10" r="1"/>
+                            <circle cx="16" cy="10" r="1"/>
+                        </svg>
+                        <p>AI-Powered Development</p>
+                    </div>
+                </div>
+                <div class="vibe-description">
+                    <h3>What is Vibe Coding?</h3>
+                    <p>Vibe Coding is Kiro IDE's revolutionary AI-powered development assistant that helps you write better code faster. It integrates advanced language models directly into your development workflow.</p>
+                    <div class="vibe-features">
+                        <div class="feature-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Intelligent code completion</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Natural language commands</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Automated bug detection</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Smart refactoring suggestions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vibe-features-grid">
+                <div class="vibe-feature-card">
+                    <div class="feature-header">
+                        <i class="fas fa-keyboard"></i>
+                        <h3>AI Code Completion</h3>
+                    </div>
+                    <div class="svg-icon medium">
+                        <svg viewBox="0 0 24 24" fill="#00BCD4" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                        <p>Smart Code Completion</p>
+                    </div>
+                    <p>Get context-aware code suggestions as you type. The AI understands your project structure and coding patterns.</p>
+                    <div class="feature-steps">
+                        <div class="step">Start typing code</div>
+                        <div class="step">AI suggests completions</div>
+                        <div class="step">Press Tab to accept</div>
+                    </div>
+                </div>
+
+                <div class="vibe-feature-card">
+                    <div class="feature-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Natural Language Commands</h3>
+                    </div>
+                    <div class="svg-icon medium">
+                        <svg viewBox="0 0 24 24" fill="#8BC34A" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+                        </svg>
+                        <p>Natural Language Commands</p>
+                    </div>
+                    <p>Use plain English to generate code, refactor, or get explanations. Just describe what you want to do!</p>
+                    <div class="command-examples">
+                        <div class="command-example">
+                            <code>"Create a function that sorts an array"</code>
+                        </div>
+                        <div class="command-example">
+                            <code>"Refactor this to use async/await"</code>
+                        </div>
+                        <div class="command-example">
+                            <code>"Add error handling to this function"</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vibe-feature-card">
+                    <div class="feature-header">
+                        <i class="fas fa-search"></i>
+                        <h3>Smart Code Analysis</h3>
+                    </div>
+                    <div class="svg-icon medium">
+                        <svg viewBox="0 0 24 24" fill="#FF5722" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                        </svg>
+                        <p>Code Quality Analysis</p>
+                    </div>
+                    <p>Get insights about your code quality, performance issues, and security vulnerabilities.</p>
+                    <div class="analysis-types">
+                        <div class="analysis-type">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security scanning</span>
+                        </div>
+                        <div class="analysis-type">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Performance analysis</span>
+                        </div>
+                        <div class="analysis-type">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Code complexity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vibe-feature-card">
+                    <div class="feature-header">
+                        <i class="fas fa-sync"></i>
+                        <h3>Automated Refactoring</h3>
+                    </div>
+                    <div class="svg-icon medium">
+                        <svg viewBox="0 0 24 24" fill="#E91E63" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 5.6L10 7 8.6 4.5 10 2 7.5 3.4 5 2l1.4 2.5L5 7zm12 9.8L17 14l1.4 2.5L17 19l2.5-1.4L22 19l-1.4-2.5L22 14zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5zm-7.63 5.29c-.39-.39-1.02-.39-1.41 0L1.29 18.96c-.39.39-.39 1.02 0 1.41l2.34 2.34c.39.39 1.02.39 1.41 0L16.7 11.05c.39-.39.39-1.02 0-1.41l-2.33-2.35zm-1.03 1.74l-1.75 1.75-1.41-1.41 1.75-1.75 1.41 1.41z"/>
+                        </svg>
+                        <p>Automated Refactoring</p>
+                    </div>
+                    <p>Let AI handle complex refactoring tasks while you focus on functionality.</p>
+                    <div class="refactor-options">
+                        <div class="refactor-option">
+                            <i class="fas fa-compress"></i>
+                            <span>Code simplification</span>
+                        </div>
+                        <div class="refactor-option">
+                            <i class="fas fa-expand"></i>
+                            <span>Function extraction</span>
+                        </div>
+                        <div class="refactor-option">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Pattern optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vibe-tips">
+                <h3>Pro Tips for Vibe Coding</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Be Specific</h4>
+                        <p>The more detailed your natural language commands, the better the AI results.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-history"></i>
+                        <h4>Learn from Context</h4>
+                        <p>AI improves over time by learning from your coding style and project patterns.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-keyboard"></i>
+                        <h4>Keyboard Shortcuts</h4>
+                        <p>Use Ctrl+Space for AI suggestions and Ctrl+K for natural language commands.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-user-cog"></i>
+                        <h4>Customize Settings</h4>
+                        <p>Adjust AI behavior in settings to match your preferences and workflow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Practices Section -->
+    <section id="best-practices" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Best Practices for Development Workflow</h2>
+                <p>Optimize your productivity and code quality with these proven strategies</p>
+            </div>
+
+            <div class="workflow-categories">
+                <div class="category">
+                    <div class="category-header">
+                        <i class="fas fa-folder-tree"></i>
+                        <h3>Project Organization</h3>
+                    </div>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <h4>Consistent Folder Structure</h4>
+                            <p>Use a logical and consistent folder organization across all projects.</p>
+                            <div class="code-example">
+                                <pre><code>project/
+├── src/
+│   ├── components/
+│   ├── utils/
+│   └── styles/
+├── tests/
+├── docs/
+└── README.md</code></pre>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Naming Conventions</h4>
+                            <p>Use descriptive names for files, folders, and variables following language-specific conventions.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Documentation First</h4>
+                            <p>Create README files and documentation before writing code.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Version Control</h3>
+                    </div>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <h4>Commit Often, Commit Small</h4>
+                            <p>Make frequent, small commits with clear, descriptive messages.</p>
+                            <div class="commit-example">
+                                <div class="good-commit">
+                                    <span class="label">Good:</span>
+                                    <code>feat: Add user authentication endpoint</code>
+                                </div>
+                                <div class="bad-commit">
+                                    <span class="label">Avoid:</span>
+                                    <code>fixed stuff</code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Branch Strategy</h4>
+                            <p>Use feature branches for new development and keep main stable.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Regular Pull Requests</h4>
+                            <p>Review code through pull requests before merging to main branches.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category-header">
+                        <i class="fas fa-bug"></i>
+                        <h3>Code Quality</h3>
+                    </div>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <h4>Write Tests First</h4>
+                            <p>Adopt Test-Driven Development (TDD) for better code design.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Code Reviews</h4>
+                            <p>Regular peer reviews catch bugs and share knowledge.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Linting and Formatting</h4>
+                            <p>Use automated tools to maintain consistent code style.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category-header">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Productivity Tips</h3>
+                    </div>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <h4>Master Keyboard Shortcuts</h4>
+                            <p>Learn essential shortcuts to reduce mouse dependency.</p>
+                            <div class="shortcut-table">
+                                <table>
+                                    <tr><td>Ctrl+P</td><td>Quick file search</td></tr>
+                                    <tr><td>Ctrl+Shift+P</td><td>Command palette</td></tr>
+                                    <tr><td>Ctrl+`</td><td>Toggle terminal</td></tr>
+                                    <tr><td>F11</td><td>Toggle fullscreen</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Use Snippets</h4>
+                            <p>Create custom snippets for frequently used code patterns.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Workspace Customization</h4>
+                            <p>Set up workspaces for different project types.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workflow-checklist">
+                <h3>Daily Development Checklist</h3>
+                <div class="checklist-grid">
+                    <div class="checklist-column">
+                        <h4>Before Coding</h4>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check1">
+                            <label for="check1">Pull latest changes from repository</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check2">
+                            <label for="check2">Review project requirements</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check3">
+                            <label for="check3">Set up development environment</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check4">
+                            <label for="check4">Create feature branch</label>
+                        </div>
+                    </div>
+                    <div class="checklist-column">
+                        <h4>During Coding</h4>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check5">
+                            <label for="check5">Write tests before implementation</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check6">
+                            <label for="check6">Commit frequently with descriptive messages</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check7">
+                            <label for="check7">Run tests regularly</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check8">
+                            <label for="check8">Use AI assistant for code review</label>
+                        </div>
+                    </div>
+                    <div class="checklist-column">
+                        <h4>After Coding</h4>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check9">
+                            <label for="check9">Run full test suite</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check10">
+                            <label for="check10">Check code coverage</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check11">
+                            <label for="check11">Update documentation</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check12">
+                            <label for="check12">Create pull request</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Additional Resources</h2>
+                <p>Expand your knowledge with these helpful links and tools</p>
+            </div>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Official Documentation</h3>
+                    <p>Comprehensive guides and API references</p>
+                    <a href="#" class="resource-link">Visit Docs →</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Video Tutorials</h3>
+                    <p>Step-by-step video guides for all levels</p>
+                    <a href="#" class="resource-link">Watch Videos →</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Forum</h3>
+                    <p>Get help and share experiences with other users</p>
+                    <a href="#" class="resource-link">Join Community →</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h3>Extensions Marketplace</h3>
+                    <p>Enhance Kiro IDE with powerful extensions</p>
+                    <a href="#" class="resource-link">Browse Extensions →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Kiro IDE Tutorial</h4>
+                    <p>Your comprehensive guide to mastering Kiro IDE and vibe coding.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#getting-started">Getting Started</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#git-publishing">Git Publishing</a></li>
+                        <li><a href="#vibe-coding">Vibe Coding</a></li>
+                        <li><a href="#best-practices">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest tips and updates for Kiro IDE.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kiro IDE Tutorial. Made with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
