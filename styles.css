@@ -1733,3 +1733,84 @@ button:focus {
         grid-template-columns: 1fr;
     }
 }
+
+/* Hero Image Styling */
+.kiro-screenshot {
+    text-align: center;
+    position: relative;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 3px solid #e1e5e9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.kiro-screenshot p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* Small decorative images */
+.small-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f3f4f6;
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+.small-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: #2563eb;
+}
+
+/* Feature cards with small images */
+.feature-card-with-image {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.feature-card-with-image:hover {
+    background: #f1f5f9;
+    transform: translateX(5px);
+}
+
+.feature-card-with-image .small-pic {
+    flex-shrink: 0;
+}
+
+.feature-card-with-image .content {
+    flex: 1;
+}
+
+.feature-card-with-image h4 {
+    margin: 0 0 5px 0;
+    color: #1f2937;
+    font-size: 1.1rem;
+}
+
+.feature-card-with-image p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+}

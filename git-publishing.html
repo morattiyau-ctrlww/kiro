@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Web Publishing - Kiro IDE Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-code"></i>
+                    <span>Kiro IDE Tutorial</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="getting-started.html">Getting Started</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="git-publishing.html" class="active">Git Publishing</a></li>
+                    <li><a href="vibe-coding.html">Vibe Coding</a></li>
+                    <li><a href="best-practices.html">Best Practices</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Git Web Publishing</h1>
+            <p class="hero-subtitle">Deploy your projects to the web using modern Git-based platforms</p>
+            <div class="hero-buttons">
+                <a href="best-practices.html" class="btn btn-primary">Next: Best Practices →</a>
+                <a href="vibe-coding.html" class="btn btn-secondary">← Vibe Coding</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="svg-icon large">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="#4CAF50"/>
+                    <path d="M12 2V12L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="#45A049"/>
+                </svg>
+                <p>Git Deployment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Git Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Git Fundamentals</h2>
+                <p>Master the essential Git commands for web development and deployment</p>
+            </div>
+
+            <div class="git-basics">
+                <div class="git-intro">
+                    <h3>Essential Git Commands</h3>
+                    <p>These are the core Git commands you'll use for publishing your projects:</p>
+                </div>
+
+                <div class="git-commands-grid">
+                    <div class="git-command-card">
+                        <div class="command-title">
+                            <i class="fas fa-folder-plus"></i>
+                            <h4>Initialize Repository</h4>
+                        </div>
+                        <div class="command-code">
+                            <code>git init</code>
+                        </div>
+                        <p>Creates a new Git repository in your project directory</p>
+                    </div>
+
+                    <div class="git-command-card">
+                        <div class="command-title">
+                            <i class="fas fa-plus"></i>
+                            <h4>Stage Files</h4>
+                        </div>
+                        <div class="command-code">
+                            <code>git add .</code>
+                        </div>
+                        <p>Adds all files to the staging area for the next commit</p>
+                    </div>
+
+                    <div class="git-command-card">
+                        <div class="command-title">
+                            <i class="fas fa-save"></i>
+                            <h4>Commit Changes</h4>
+                        </div>
+                        <div class="command-code">
+                            <code>git commit -m "Your message"</code>
+                        </div>
+                        <p>Saves staged changes with a descriptive commit message</p>
+                    </div>
+
+                    <div class="git-command-card">
+                        <div class="command-title">
+                            <i class="fas fa-link"></i>
+                            <h4>Add Remote</h4>
+                        </div>
+                        <div class="command-code">
+                            <code>git remote add origin [URL]</code>
+                        </div>
+                        <p>Connects your local repository to a remote Git server</p>
+                    </div>
+
+                    <div class="git-command-card">
+                        <div class="command-title">
+                            <i class="fas fa-upload"></i>
+                            <h4>Push to Remote</h4>
+                        </div>
+                        <div class="command-code">
+                            <code>git push -u origin main</code>
+                        </div>
+                        <p>Uploads your commits to trigger deployment</p>
+                    </div>
+
+                    <div class="git-command-card">
+                        <div class="command-title">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>Branch Management</h4>
+                        </div>
+                        <div class="command-code">
+                            <code>git checkout -b branch-name</code>
+                        </div>
+                        <p>Creates and switches to a new feature branch</p>
+                    </div>
+                </div>
+
+                <div class="git-workflow">
+                    <h4>Complete Git Workflow</h4>
+                    <div class="workflow-steps">
+                        <div class="workflow-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>Initialize</h5>
+                                <p>Start with <code>git init</code> to create version control</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>Stage Changes</h5>
+                                <p>Use <code>git add .</code> to prepare files for commit</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5>Commit</h5>
+                                <p>Save changes with <code>git commit -m "message"</code></p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h5>Push</h5>
+                                <p>Upload with <code>git push</code> to deploy your changes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Git Publishing Introduction -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Git-Based Publishing?</h2>
+                <p>Modern web deployment platforms leverage Git for seamless, automated workflows</p>
+            </div>
+
+            <div class="publishing-intro">
+                <div class="intro-illustration">
+                    <div class="svg-icon large">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="#4CAF50"/>
+                            <path d="M12 2V12L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="#45A049"/>
+                        </svg>
+                        <p>Git Deployment</p>
+                    </div>
+                </div>
+                <div class="intro-description">
+                    <h3>Benefits of Git-Based Publishing</h3>
+                    <p>Modern web deployment platforms leverage Git for seamless, automated workflows. Push your code, and watch it go live instantly with continuous integration, automatic HTTPS, and global CDN distribution.</p>
+                    <div class="publishing-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Instant deployment</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-sync"></i>
+                            <span>Automatic updates</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Free SSL certificates</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Build Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Push Files Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Push Your Files</h2>
+                <p>Use Kiro's AI assistant to help you deploy your project</p>
+            </div>
+
+            <div class="push-files-section">
+                <div class="push-intro">
+                    <div class="push-illustration">
+                        <div class="svg-icon medium">
+                            <svg viewBox="0 0 24 24" fill="#4CAF50" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <p>Push to Git</p>
+                        </div>
+                    </div>
+                    <div class="push-description">
+                        <p>Once you've created your project, the final step is to push your files to a Git repository to deploy them to the web.</p>
+                    </div>
+                </div>
+
+                <div class="example-prompt">
+                    <h4>Use This Prompt:</h4>
+                    <div class="prompt-box">
+                        <code>help me push the files</code>
+                    </div>
+                </div>
+
+                <div class="push-workflow">
+                    <h4>What This Does:</h4>
+                    <p>When you use this prompt with Kiro's vibe coding, the AI assistant will help you:</p>
+                    <ul class="feature-list">
+                        <li><strong>Initialize Git repository:</strong> Set up Git tracking in your project folder</li>
+                        <li><strong>Add files to staging:</strong> Prepare your files for commit</li>
+                        <li><strong>Create commits:</strong> Save your changes with descriptive messages</li>
+                        <li><strong>Connect to remote:</strong> Link your local repository to GitHub/GitLab</li>
+                        <li><strong>Push to remote:</strong> Upload your code to trigger deployment</li>
+                    </ul>
+                </div>
+
+                <div class="kiro-git-help">
+                    <h4>How Kiro Helps with Git Commands:</h4>
+                    <div class="git-help-grid">
+                        <div class="git-help-item">
+                            <div class="command-example">
+                                <code>git init</code>
+                            </div>
+                            <p>Kiro will initialize a new Git repository in your project folder</p>
+                        </div>
+                        <div class="git-help-item">
+                            <div class="command-example">
+                                <code>git add .</code>
+                            </div>
+                            <p>Adds all your files to the staging area for the next commit</p>
+                        </div>
+                        <div class="git-help-item">
+                            <div class="command-example">
+                                <code>git commit -m "Initial commit"</code>
+                            </div>
+                            <p>Creates a commit with a descriptive message about your changes</p>
+                        </div>
+                        <div class="git-help-item">
+                            <div class="command-example">
+                                <code>git remote add origin [URL]</code>
+                            </div>
+                            <p>Connects your local repository to your GitHub/GitLab repository</p>
+                        </div>
+                        <div class="git-help-item">
+                            <div class="command-example">
+                                <code>git push -u origin main</code>
+                            </div>
+                            <p>Uploads your commits to the remote repository to trigger deployment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="push-benefits">
+                    <h4>Benefits of Using Kiro for Git Operations:</h4>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI-generated Git commands based on your project structure</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Automatic .gitignore creation to exclude unnecessary files</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-history"></i>
+                            <span>Smart commit messages that describe your changes</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-sync"></i>
+                            <span>Seamless integration with deployment platforms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-start-example">
+                    <h4>Complete Workflow Example:</h4>
+                    <div class="workflow-steps-compact">
+                        <div class="compact-step">
+                            <span class="step-number">1</span>
+                            <span>Create your project using vibe coding</span>
+                        </div>
+                        <div class="compact-step">
+                            <span class="step-number">2</span>
+                            <span>Type "help me push the files" in the AI assistant</span>
+                        </div>
+                        <div class="compact-step">
+                            <span class="step-number">3</span>
+                            <span>Follow AI-generated Git commands step by step</span>
+                        </div>
+                        <div class="compact-step">
+                            <span class="step-number">4</span>
+                            <span>Watch your site go live automatically!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment Platforms -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Deployment Platforms</h2>
+                <p>Choose the right platform for your project</p>
+            </div>
+
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub Pages</h3>
+                    <p>Free hosting for static sites directly from your GitHub repository.</p>
+                    <ul class="platform-features">
+                        <li>Free for public repositories</li>
+                        <li>Custom domain support</li>
+                        <li>Automatic HTTPS</li>
+                        <li>Jekyll integration</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <div class="platform-card">
+                    <i class="fab fa-gitlab"></i>
+                    <h3>GitLab Pages</h3>
+                    <p>Static site hosting with built-in CI/CD pipelines.</p>
+                    <ul class="platform-features">
+                        <li>Free tier available</li>
+                        <li>Custom domains</li>
+                        <li>Auto-deployment</li>
+                        <li>SSL certificates</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <div class="platform-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Netlify</h3>
+                    <p>Modern hosting platform with continuous deployment.</p>
+                    <ul class="platform-features">
+                        <li>Generous free tier</li>
+                        <li>Instant rollbacks</li>
+                        <li>Form handling</li>
+                        <li>Edge functions</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <div class="platform-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Vercel</h3>
+                    <p>Optimized for frontend frameworks and static sites.</p>
+                    <ul class="platform-features">
+                        <li>Free for personal use</li>
+                        <li>Global CDN</li>
+                        <li>Analytics</li>
+                        <li>Preview deployments</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <div class="platform-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloudflare Pages</h3>
+                    <p>Fast, secure hosting with Cloudflare's global network.</p>
+                    <ul class="platform-features">
+                        <li>Free tier available</li>
+                        <li>Instant caching</li>
+                        <li>DDoS protection</li>
+                        <li>Analytics</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <div class="platform-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Render</h3>
+                    <p>Unified platform for static sites and web services.</p>
+                    <ul class="platform-features">
+                        <li>Free for static sites</li>
+                        <li>Auto-deployments</li>
+                        <li>Custom domains</li>
+                        <li>SSL certificates</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Common Issues & Solutions</h2>
+                <p>Troubleshoot deployment problems with these helpful tips</p>
+            </div>
+
+            <div class="troubleshooting-grid">
+                <div class="trouble-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Build Failures</h3>
+                    <p>Check your build logs for errors and ensure all dependencies are installed.</p>
+                    <div class="solution">
+                        <strong>Solution:</strong> Review build logs and fix syntax errors or missing dependencies.
+                    </div>
+                </div>
+
+                <div class="trouble-card">
+                    <i class="fas fa-link"></i>
+                    <h3>Broken Links</h3>
+                    <p>Relative paths may not work correctly after deployment.</p>
+                    <div class="solution">
+                        <strong>Solution:</strong> Use absolute paths or configure base URL in your build settings.
+                    </div>
+                </div>
+
+                <div class="trouble-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Slow Deployment</h3>
+                    <p>Large projects or complex builds can take time to deploy.</p>
+                    <div class="solution">
+                        <strong>Solution:</strong> Optimize assets, enable caching, and use CDN services.
+                    </div>
+                </div>
+
+                <div class="trouble-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>HTTPS Issues</h3>
+                    <p>SSL certificate problems can prevent secure access.</p>
+                    <div class="solution">
+                        <strong>Solution:</strong> Wait for certificate propagation or contact support.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ready for Advanced Features?</h2>
+                <p>Explore more powerful development capabilities</p>
+            </div>
+
+            <div class="next-steps">
+                <div class="next-step-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Master Vibe Coding</h3>
+                    <p>Learn advanced AI-powered development features</p>
+                    <a href="best-practices.html" class="btn btn-primary">Learn Best Practices →</a>
+                </div>
+                <div class="next-step-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Vibe Coding</h3>
+                    <p>Master advanced AI-powered development features</p>
+                    <a href="vibe-coding.html" class="btn btn-secondary">Explore Vibe Coding →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Kiro IDE Tutorial</h4>
+                    <p>Your comprehensive guide to mastering Kiro IDE and vibe coding.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="git-publishing.html">Git Publishing</a></li>
+                        <li><a href="vibe-coding.html">Vibe Coding</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <p>Continue your learning journey with our structured tutorials.</p>
+                    <div class="nav-buttons">
+                        <a href="vibe-coding.html" class="btn btn-secondary">← Previous</a>
+                        <a href="best-practices.html" class="btn btn-primary">Next →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kiro IDE Tutorial. Made with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

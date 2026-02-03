@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Practices - Kiro IDE Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-code"></i>
+                    <span>Kiro IDE Tutorial</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="getting-started.html">Getting Started</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="git-publishing.html">Git Publishing</a></li>
+                    <li><a href="vibe-coding.html">Vibe Coding</a></li>
+                    <li><a href="best-practices.html" class="active">Best Practices</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Best Practices for Development Workflow</h1>
+            <p class="hero-subtitle">Optimize your productivity and code quality with proven strategies</p>
+            <div class="hero-buttons">
+                <a href="index.html" class="btn btn-primary">← Back to Home</a>
+                <a href="vibe-coding.html" class="btn btn-secondary">← Vibe Coding</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="svg-icon large">
+                <svg viewBox="0 0 24 24" fill="#FF9800" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                </svg>
+                <p>Best Practices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Development Best Practices</h2>
+                <p>Master the essential workflows for professional development</p>
+            </div>
+
+            <div class="workflow-categories">
+                <div class="category">
+                    <div class="category-header">
+                        <i class="fas fa-folder-tree"></i>
+                        <h3>Project Organization</h3>
+                    </div>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <h4>Consistent Folder Structure</h4>
+                            <p>Use a logical and consistent folder organization across all projects.</p>
+                            <div class="code-example">
+                                <pre><code>project/
+├── src/
+│   ├── components/
+│   ├── utils/
+│   └── styles/
+├── tests/
+├── docs/
+└── README.md</code></pre>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Naming Conventions</h4>
+                            <p>Use descriptive names for files, folders, and variables following language-specific conventions.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Documentation First</h4>
+                            <p>Create README files and documentation before writing code.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Version Control</h3>
+                    </div>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <h4>Commit Often, Commit Small</h4>
+                            <p>Make frequent, small commits with clear, descriptive messages.</p>
+                            <div class="commit-example">
+                                <div class="good-commit">
+                                    <span class="label">Good:</span>
+                                    <code>feat: Add user authentication endpoint</code>
+                                </div>
+                                <div class="bad-commit">
+                                    <span class="label">Avoid:</span>
+                                    <code>fixed stuff</code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Branch Strategy</h4>
+                            <p>Use feature branches for new development and keep main stable.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Regular Pull Requests</h4>
+                            <p>Review code through pull requests before merging to main branches.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category-header">
+                        <i class="fas fa-bug"></i>
+                        <h3>Code Quality</h3>
+                    </div>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <h4>Write Tests First</h4>
+                            <p>Adopt Test-Driven Development (TDD) for better code design.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Code Reviews</h4>
+                            <p>Regular peer reviews catch bugs and share knowledge.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Linting and Formatting</h4>
+                            <p>Use automated tools to maintain consistent code style.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category-header">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Productivity Tips</h3>
+                    </div>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <h4>Master Keyboard Shortcuts</h4>
+                            <p>Learn essential shortcuts to reduce mouse dependency.</p>
+                            <div class="shortcut-table">
+                                <table>
+                                    <tr><td>Ctrl+P</td><td>Quick file search</td></tr>
+                                    <tr><td>Ctrl+Shift+P</td><td>Command palette</td></tr>
+                                    <tr><td>Ctrl+`</td><td>Toggle terminal</td></tr>
+                                    <tr><td>F11</td><td>Toggle fullscreen</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Use Snippets</h4>
+                            <p>Create custom snippets for frequently used code patterns.</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Workspace Customization</h4>
+                            <p>Set up workspaces for different project types.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Development Checklist -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Daily Development Checklist</h2>
+                <p>Build professional habits with this comprehensive workflow guide</p>
+            </div>
+
+            <div class="workflow-checklist">
+                <div class="checklist-grid">
+                    <div class="checklist-column">
+                        <h4>Before Coding</h4>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check1">
+                            <label for="check1">Pull latest changes from repository</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check2">
+                            <label for="check2">Review project requirements</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check3">
+                            <label for="check3">Set up development environment</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check4">
+                            <label for="check4">Create feature branch</label>
+                        </div>
+                    </div>
+                    <div class="checklist-column">
+                        <h4>During Coding</h4>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check5">
+                            <label for="check5">Write tests before implementation</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check6">
+                            <label for="check6">Commit frequently with descriptive messages</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check7">
+                            <label for="check7">Run tests regularly</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check8">
+                            <label for="check8">Use AI assistant for code review</label>
+                        </div>
+                    </div>
+                    <div class="checklist-column">
+                        <h4>After Coding</h4>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check9">
+                            <label for="check9">Run full test suite</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check10">
+                            <label for="check10">Check code coverage</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check11">
+                            <label for="check11">Update documentation</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check12">
+                            <label for="check12">Create pull request</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Optimization -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Performance Optimization</h2>
+                <p>Write code that runs efficiently and scales well</p>
+            </div>
+
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Frontend Performance</h3>
+                    <p>Optimize your web applications for speed and user experience.</p>
+                    <ul class="feature-list">
+                        <li><strong>Minimize HTTP requests:</strong> Combine files and use sprites</li>
+                        <li><strong>Optimize images:</strong> Use modern formats and compression</li>
+                        <li><strong>Enable caching:</strong> Implement browser and server caching</li>
+                        <li><strong>Lazy loading:</strong> Load content as needed</li>
+                    </ul>
+                </div>
+
+                <div class="performance-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Performance</h3>
+                    <p>Build efficient server-side applications that can handle scale.</p>
+                    <ul class="feature-list">
+                        <li><strong>Database optimization:</strong> Use indexes and query optimization</li>
+                        <li><strong>Caching strategies:</strong> Implement Redis or Memcached</li>
+                        <li><strong>Load balancing:</strong> Distribute traffic across servers</li>
+                        <li><strong>Asynchronous processing:</strong> Use queues for background tasks</li>
+                    </ul>
+                </div>
+
+                <div class="performance-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Optimization</h3>
+                    <p>Ensure your applications work great on all devices.</p>
+                    <ul class="feature-list">
+                        <li><strong>Responsive design:</strong> Adapt to all screen sizes</li>
+                        <li><strong>Touch optimization:</strong> Design for touch interactions</li>
+                        <li><strong>Battery efficiency:</strong> Minimize resource usage</li>
+                        <li><strong>Network awareness:</strong> Handle poor connectivity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Best Practices -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Security Best Practices</h2>
+                <p>Write secure code that protects your users and data</p>
+            </div>
+
+            <div class="security-grid">
+                <div class="security-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Input Validation</h3>
+                    <p>Never trust user input - always validate and sanitize.</p>
+                    <div class="security-example">
+                        <strong>Do:</strong> Validate all inputs on server side<br>
+                        <strong>Don't:</strong> Trust client-side validation only
+                    </div>
+                </div>
+
+                <div class="security-card">
+                    <i class="fas fa-key"></i>
+                    <h3>Authentication & Authorization</h3>
+                    <p>Implement proper user authentication and access control.</p>
+                    <ul class="feature-list">
+                        <li>Use strong password policies</li>
+                        <li>Implement multi-factor authentication</li>
+                        <li>Use OAuth for third-party logins</li>
+                        <li>Apply principle of least privilege</li>
+                    </ul>
+                </div>
+
+                <div class="security-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Data Protection</h3>
+                    <p>Encrypt sensitive data and follow privacy regulations.</p>
+                    <ul class="feature-list">
+                        <li>Encrypt data at rest and in transit</li>
+                        <li>Use HTTPS for all communications</li>
+                        <li>Follow GDPR and CCPA guidelines</li>
+                        <li>Implement proper data retention policies</li>
+                    </ul>
+                </div>
+
+                <div class="security-card">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>Security Testing</h3>
+                    <p>Regularly test your applications for vulnerabilities.</p>
+                    <ul class="feature-list">
+                        <li>Conduct security audits</li>
+                        <li>Use automated security scanners</li>
+                        <li>Perform penetration testing</li>
+                        <li>Keep dependencies updated</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration and Teamwork -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Collaboration and Teamwork</h2>
+                <p>Work effectively with others using modern development practices</p>
+            </div>
+
+            <div class="collaboration-grid">
+                <div class="collaboration-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Communication</h3>
+                    <p>Clear communication prevents misunderstandings and delays.</p>
+                    <ul class="feature-list">
+                        <li>Use descriptive commit messages</li>
+                        <li>Document your decisions</li>
+                        <li>Participate in code reviews</li>
+                        <li>Ask questions early and often</li>
+                    </ul>
+                </div>
+
+                <div class="collaboration-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Standards</h3>
+                    <p>Establish and follow consistent coding standards.</p>
+                    <ul class="feature-list">
+                        <li>Create style guides</li>
+                        <li>Use shared linters and formatters</li>
+                        <li>Establish naming conventions</li>
+                        <li>Document architectural decisions</li>
+                    </ul>
+                </div>
+
+                <div class="collaboration-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Knowledge Sharing</h3>
+                    <p>Share knowledge to improve team capabilities.</p>
+                    <ul class="feature-list">
+                        <li>Conduct regular code reviews</li>
+                        <li>Pair programming sessions</li>
+                        <li>Technical presentations</li>
+                        <li>Maintain comprehensive documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continuous Learning -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Continuous Learning and Growth</h2>
+                <p>Stay current in the ever-evolving tech landscape</p>
+            </div>
+
+            <div class="learning-grid">
+                <div class="learning-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Stay Updated</h3>
+                    <p>Keep your skills current with the latest technologies and practices.</p>
+                    <ul class="feature-list">
+                        <li>Follow tech blogs and newsletters</li>
+                        <li>Attend conferences and meetups</li>
+                        <li>Take online courses</li>
+                        <li>Experiment with new technologies</li>
+                    </ul>
+                </div>
+
+                <div class="learning-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Practice Regularly</h3>
+                    <p>Maintain and improve your coding skills through practice.</p>
+                    <ul class="feature-list">
+                        <li>Contribute to open source</li>
+                        <li>Build personal projects</li>
+                        <li>Participate in coding challenges</li>
+                        <li>Teach others what you learn</li>
+                    </ul>
+                </div>
+
+                <div class="learning-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Track Your Progress</h3>
+                    <p>Monitor your growth and identify areas for improvement.</p>
+                    <ul class="feature-list">
+                        <li>Set learning goals</li>
+                        <li>Maintain a learning journal</li>
+                        <li>Seek feedback regularly</li>
+                        <li>Celebrate your achievements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Congratulations!</h2>
+                <p>You've completed the Kiro IDE tutorial journey</p>
+            </div>
+
+            <div class="conclusion-content">
+                <p>You now have a solid foundation in:</p>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Setting up and using Kiro IDE</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Creating and managing projects</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Deploying with Git and web platforms</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Using AI-powered vibe coding</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Following professional best practices</span>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h3>Where to Go from Here?</h3>
+                    <div class="suggestions">
+                        <div class="suggestion-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>Build Complex Projects</h4>
+                            <p>Apply your skills to build real-world applications</p>
+                        </div>
+                        <div class="suggestion-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Join the Community</h4>
+                            <p>Connect with other Kiro IDE users and developers</p>
+                        </div>
+                        <div class="suggestion-card">
+                            <i class="fas fa-share"></i>
+                            <h4>Share Your Knowledge</h4>
+                            <p>Help others learn by sharing your experiences</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="final-cta">
+                    <a href="index.html" class="btn btn-primary">Back to Tutorial Home</a>
+                    <p>Keep coding, keep learning, and enjoy building amazing things with Kiro IDE!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Kiro IDE Tutorial</h4>
+                    <p>Your comprehensive guide to mastering Kiro IDE and vibe coding.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="git-publishing.html">Git Publishing</a></li>
+                        <li><a href="vibe-coding.html">Vibe Coding</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <p>You've completed the tutorial! Review any section or start a new project.</p>
+                    <div class="nav-buttons">
+                        <a href="vibe-coding.html" class="btn btn-secondary">← Previous</a>
+                        <a href="index.html" class="btn btn-primary">Tutorial Home →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kiro IDE Tutorial. Made with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
